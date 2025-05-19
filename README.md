@@ -1,5 +1,12 @@
 # Next.js Supabase Legacy Auth
 
+## 関連プロジェクト
+🔗 [NextAuth版リポジトリ](https://github.com/nogataka/nextjs-supabase-nextauth) - NextAuth.jsを使用した認証バージョン
+
+<p align="center">
+ Next.js 14とSupabaseを使用した認証機能のデモアプリケーション
+</p>
+
 ## プロジェクト概要
 
 このプロジェクトは、Next.js 14とSupabaseを使用した認証機能のデモアプリケーションです。最新のウェブ開発技術を活用し、セキュアで効率的な認証システムを提供します。
