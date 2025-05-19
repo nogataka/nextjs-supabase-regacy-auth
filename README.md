@@ -91,3 +91,57 @@ Please file feedback and issues over on the [Supabase GitHub org](https://github
 - [Next.js Subscription Payments Starter](https://github.com/vercel/nextjs-subscription-payments)
 - [Cookie-based Auth and the Next.js 13 App Router (free course)](https://youtube.com/playlist?list=PL5S4mPUpp4OtMhpnp93EFSo42iQ40XjbF)
 - [Supabase Auth and the Next.js App Router](https://github.com/supabase/supabase/tree/master/examples/auth/nextjs)
+
+# Next.js Supabase Legacy Auth
+
+## プロジェクト概要
+このプロジェクトは、Next.js 14とSupabaseを使用した認証機能のデモアプリケーションです。
+
+## プロジェクト構造
+```
+.
+├── app
+│   ├── api             # APIエンドポイント
+│   ├── dashboard       # ダッシュボードページ
+│   ├── login           # ログインページ
+│   ├── profile         # プロフィールページ
+│   └── signup          # サインアップページ
+├── components
+│   └── Navbar.tsx      # ナビゲーションバーコンポーネント
+├── context
+│   └── AuthContext.tsx # 認証コンテキスト
+└── middleware.ts       # 認証ミドルウェア
+```
+
+## 技術スタック
+- **フレームワーク**: Next.js 14
+- **認証**: Supabase
+- **スタイリング**: Tailwind CSS
+- **言語**: TypeScript
+
+## 依存関係
+### メイン依存関係
+- @supabase/auth-helpers-nextjs: ^0.8.7
+- @supabase/ssr: latest
+- @supabase/supabase-js: latest
+- next: 14.1.0
+- react: 18.2.0
+- tailwindcss: 3.3.3
+
+### 開発依発依存関係
+- typescript: 5.1.3
+- @types/react: 18.2.8
+
+## セットアップ方法
+1. リポジトリをクローン
+2. `npm install`で依存関係をインストール
+3. `.env.local`に必要な環境変数を設定
+4. `npm run dev`でローカル開発サーバーを起動
+
+## スクリプト
+- `npm run dev`: 開発モードで起動
+- `npm run build`: プロダクションビルド
+- `npm start`: プロダクションモードで起動
+
+## ライセンス
+このプロジェクトは[ライセンス情報を追加]の下で公開されています。
