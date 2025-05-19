@@ -145,3 +145,23 @@ Please file feedback and issues over on the [Supabase GitHub org](https://github
 
 ## ライセンス
 このプロジェクトは[ライセンス情報を追加]の下で公開されています。
+
+## 環境変数の設定
+
+1. `.env.local.sample`ファイルを`.env.local`にコピーします：
+   ```bash
+   cp .env.local.sample .env.local
+   ```
+
+2. `.env.local`ファイルを編集し、以下の値を設定します：
+   - `NEXT_PUBLIC_SUPABASE_URL`: [Supabaseダッシュボード](https://app.supabase.com/project/_/settings/api)から取得したプロジェクトURL
+   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`: 同じくダッシュボードから取得した匿名キー
+   - その他の環境変数も必要に応じて設定
+
+### 環境変数の説明
+- `NEXT_PUBLIC_SUPABASE_URL`: SupabaseプロジェクトのベースURL
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`: パブリックアクセス用のキー
+- `SUPABASE_SERVICE_ROLE_KEY`: サーバーサイド専用の秘密キー（オプション）
+- `NEXTAUTH_SECRET`: アプリケーションのセキュリティ用秘密鍵
+
+**注意**: 秘密キーは絶対に公開しないでください。`.gitignore`に`.env.local`を追加してください。
